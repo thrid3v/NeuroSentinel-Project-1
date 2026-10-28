@@ -1,0 +1,37 @@
+{
+  "trained_at": "2026-10-13 14:38:32",
+  "n_samples": 157,
+  "class_counts": {
+    "Healthy": 141,
+    "Dementia": 16
+  },
+  "dementia_probability_threshold": 0.4,
+  "full_model": {
+    "best_params": {
+      "class_weight": "balanced",
+      "max_depth": 20,
+      "min_samples_split": 5,
+      "n_estimators": 500
+    },
+    "sensitivity": 0.3125,
+    "specificity": 0.8652,
+    "true_positives": 5,
+    "false_negatives": 11,
+    "true_negatives": 122,
+    "false_positives": 19
+  },
+  "acoustic_model": {
+    "best_params": {
+      "class_weight": null,
+      "max_depth": 10,
+      "min_samples_split": 2,
+      "n_estimators": 500
+    },
+    "sensitivity": 0.25,
+    "specificity": 0.9716,
+    "true_positives": 4,
+    "false_negatives": 12,
+    "true_negatives": 137,
+    "false_positives": 4
+  }
+}

@@ -1,0 +1,18 @@
+streamlit>=1.28.0
+pandas>=2.0.0
+plotly>=5.17.0
+# numpy>=2.0 required: models/*.pkl were pickled under numpy 2.x, and numpy 2.0
+# renamed its internal numpy.core module to numpy._core - unpickling a numpy>=2.0
+# array under numpy<2.0 fails with "ModuleNotFoundError: No module named
+# 'numpy._core...'". Keep this >= the major version actually used to train.
+numpy>=2.0.0
+librosa>=0.10.0
+vosk>=0.3.45
+# Pinned exact: scikit-learn's own docs warn pickle compatibility isn't
+# guaranteed across versions (not just major ones) - this is the exact
+# version models/*.pkl were trained with (see train_model.py).
+scikit-learn==1.9.0
+fpdf>=1.7.2
+
+# Note: sqlite3 is included in Python standard library
+# Note: wave, json, pickle, datetime, os are also standard library modules
