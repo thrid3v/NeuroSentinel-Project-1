@@ -220,12 +220,19 @@ with tab1:
     # Audio Input
     audio_input = st.audio_input("Record")
 
+    st.markdown("<p style='text-align: center; margin: 15px 0; color: #E0E6ED; opacity: 0.6;'>— or —</p>", unsafe_allow_html=True)
+
+    uploaded_file = st.file_uploader("Upload a WAV recording", type=["wav"])
+
     st.markdown("</div>", unsafe_allow_html=True)
 
-    if audio_input:
-        st.audio(audio_input, format="audio/wav")
+    # An uploaded file takes priority over a live recording when both are present.
+    active_audio = uploaded_file if uploaded_file is not None else audio_input
+
+    if active_audio:
+        st.audio(active_audio, format="audio/wav")
         with open("temp_input.wav", "wb") as f:
-            f.write(audio_input.getvalue())
+            f.write(active_audio.getvalue())
         
         # Centered Analysis Button
         col1, col2, col3 = st.columns([1, 2, 1])
