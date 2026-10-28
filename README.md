@@ -137,7 +137,7 @@ When a result is "Healthy," the app separately checks recording quality (duratio
 
 ## Model Performance
 
-Accuracy is deliberately not reported anywhere in the app: with 141 Healthy vs. 16 Dementia (~90/10 split), a model that always predicts "Healthy" would score ~90% accuracy while being useless. Instead, performance is reported as **sensitivity** and **specificity** from repeated cross-validation (5-fold × 20 repeats = 100 out-of-fold evaluations, since 16 positive examples is too few for a single train/test split to be reliable):
+Accuracy is deliberately not reported anywhere in the app: with 141 Healthy vs. 16 Dementia (~90/10 split), a model that always predicts "Healthy" would score ~90% accuracy while being useless. Instead, performance is reported as **sensitivity** and **specificity** from repeated cross-validation (5-fold × 20 repeats = 100 out-of-fold evaluations, since 16 positive examples. is too few for a single train/test split to be reliable):
 
 | Model | Sensitivity | Specificity |
 |---|---|---|
