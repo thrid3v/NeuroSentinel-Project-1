@@ -1,9 +1,24 @@
 [theme]
-base="dark"
-primaryColor="#72CC96"
-backgroundColor="#1A1F2B"
-secondaryBackgroundColor="#242A38"
-textColor="#E0E6ED"
+base = "dark"
+primaryColor = "#2FD5C4"
+backgroundColor = "#0E1218"
+secondaryBackgroundColor = "#161C27"
+textColor = "#E8ECF2"
+borderColor = "#262E3D"
+greenColor = "#4ECB8D"
+redColor = "#E8674F"
+baseRadius = "10px"
+showWidgetBorder = true
+font = "Space Grotesk:https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+headingFont = "Space Grotesk:https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap"
+codeFont = "'Space Mono':https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+
+[theme.sidebar]
+backgroundColor = "#0B0E14"
+secondaryBackgroundColor = "#161C27"
+borderColor = "#262E3D"
+textColor = "#E8ECF2"
+primaryColor = "#2FD5C4"
 
 [browser]
 gatherUsageStats = false
